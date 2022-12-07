@@ -2,15 +2,7 @@ import streamlit as st
 import preprocessor,helper
 import matplotlib.pyplot as plt
 import seaborn as sns
-st.title("भैंसी एनालाइजर")
-video_file = open('myvideo.mp4', 'rb')
-video_bytes = video_file.read()
 
-st.video(video_bytes)
-from PIL import Image
-image = Image.open('kalabicchu.jpg')
-
-st.image(image, caption='काला बिच्छू',width=250)
 st.sidebar.title("Whatsapp Chat Analyzer")
 
 uploaded_file = st.sidebar.file_uploader("Choose a file")
